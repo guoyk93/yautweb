@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YAUT - Yet Another Useless Token</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.6.0/dist/pulse/bootstrap.min.css"
+        integrity="sha256-qfErV6XgD4zAMfPshMhtEqWkdCDprdAKbG4ZIhz/pbo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <style>
+        body {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/"><i class="fa fa-dollar"></i>&nbsp;&nbsp;YAUT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">EN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/zh/">中文</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link"
+                        href="https://github.com/guoyk93/yautvending">
+			    <i class="fa fa-github"></i>&nbsp;&nbsp;Github</a>
+                </li>
+
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link"
+                        href="https://cardanoscan.io/token/162b7c0fe47f31fb2b4dc0263ad60d5b26df1b7c">
+			    <i class="fa fa-window-restore"></i>&nbsp;&nbsp;Cardanoscan</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h1><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Announcing "Yet Another Useless Token" (YAUT)</h1>
+                <br />
+                <p>After several days and nights of painful reading through the documents and writing code, I finally
+                    completed the development of YAUT.</p>
+                <p>Now, I'm proudly announcing the final release of YAUT, a totally useless token on Cardano network.
+                </p>
+                <p><b>If you want to try out the new native token feature of Cardano, just buy some YAUT.</b></p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h1><i class="fa fa-money"></i>&nbsp;&nbsp;How to buy YAUT (Beta)</h1>
+                <br />
+                <p>Buying YAUT is as easy as throwing money into a pood.</p>
+                <hr />
+                <p>Send <b>MORE THAN 5 ADA</b> to address
+                    <code style="font-size: 1.2rem;">addr1vycaedgwweaal9vsh04e7l09p34x3u2wqq2tpm6ld4rc2jgkvh0yx</code>,
+                    and the system will send
+                    you <b>2 ADA</b> back in 10 minutes, along with all remaining ADA converted to YAUT.
+                </p>
+                <hr />
+                <p>The limitation of <b>5 ADA</b> is because all YAUT is minted only the fly, Cardano
+                    network has a higher minimum UTXO requirements for transactions that contain minting actions.
+                    <span class="text-danger">Thus, if you send less than <b>5 ADA</b> to that address, <b>YOU WILL LOSE
+                            THEM
+                            PERMANENTLY</b>.</span>
+                </p>
+                <p>Also, send ADA from <b>ONE SINGLE ADDRESS</b>, and <b>DON'T</b> send ADA directly from an exchange
+                    account.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h1><i class="fa fa-certificate"></i>&nbsp;&nbsp;The value of YAUT</h1>
+                <br />
+                <p>YAUT is completely useless, that does not mean YAUT has no value.</p>
+                <p>According to the policy script, no YAUT could be minted after slot <code>181306000</code>, that means
+                    YAUT will eventually be scarce.</p>
+                <p>
+                <pre><code>
+ // policy.script
+ {
+     "type": "all",
+     "scripts": [
+       {
+         "type": "sig",
+         "keyHash": "ce0b101709696dbc598485a670972e573c34689a2d3974d8c58337ab"
+       },
+       {
+         "type": "before",
+         "slot": 181306000
+       }
+     ]
+ }
+
+ // policy.id
+ 7c0ab3c842d8b9db926a69483e53aa7b1d55aa55884bf68b3e0d58d3
+                </code></pre>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-12">
+                <h1><i class="fa fa-users"></i> Team</h1>
+                <br />
+                <p>Just me, <a href="https://twitter.com/guoyk93" target="_blank">@guoyk93</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha256-sCElQ8xaSgoxwbWp0eiXMmGZIRa0z94+ffzzO06BqXs=" crossorigin="anonymous"></script>
+</body>
+
+</html>
